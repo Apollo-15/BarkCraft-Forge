@@ -53,8 +53,7 @@ public class BarkEventHandler {
         level.playSound(null, event.getPos(), SoundEvents.AXE_STRIP,
                 SoundSource.BLOCKS, 1.0F, 1.0F);
 
-        int barkAmount = ThreadLocalRandom.current().nextInt(1, 4);
-
+        int barkAmount = ThreadLocalRandom.current().nextInt(1, 5);
         ItemStack bark = getBarkItemForLog(blockState);
         if (bark != null){
             BlockState strippedState = getStrippedLog(blockState);

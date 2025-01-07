@@ -1,0 +1,14 @@
+{
+  "item.barkcraft.acacia_bark": "Акациевая Кора",
+  "item.barkcraft.birch_bark": "Берёзовая кора",
+  "item.barkcraft.cherry_bark": "Вишнёвая кора",
+  "item.barkcraft.dark_oak_bark": "Тёмная дубовая кора",
+  "item.barkcraft.jungle_bark": "Кора тропического дерева",
+  "item.barkcraft.mangrove_bark": "Мангровая кора",
+  "item.barkcraft.oak_bark": "Дубовая кора",
+  "item.barkcraft.spruce_bark": "Еловая кора",
+  "item.barkcraft.crimson_bark": "Багровая кора",
+  "item.barkcraft.warped_bark": "Искаженная кора",
+
+  "creativetab.barkcraft_ingredients_tab": "BarkCraft | Кора"
+}

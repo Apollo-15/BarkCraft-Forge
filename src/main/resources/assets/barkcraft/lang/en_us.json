@@ -1,0 +1,14 @@
+{
+  "item.barkcraft.acacia_bark": "Acacia bark",
+  "item.barkcraft.birch_bark": "Birch bark",
+  "item.barkcraft.cherry_bark": "Cherry bark",
+  "item.barkcraft.dark_oak_bark": "Dark oak bark",
+  "item.barkcraft.jungle_bark": "Jungle bark",
+  "item.barkcraft.mangrove_bark": "Mangrove bark",
+  "item.barkcraft.oak_bark": "Oak bark",
+  "item.barkcraft.spruce_bark": "Spruce bark",
+  "item.barkcraft.crimson_bark": "Crimson bark",
+  "item.barkcraft.warped_bark": "Warped bark",
+
+  "creativetab.barkcraft_ingredients_tab": "BarkCraft | Barks"
+}

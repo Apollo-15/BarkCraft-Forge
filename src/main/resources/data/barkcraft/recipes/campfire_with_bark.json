@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BSB",
+    "LLL"
+  ],
+  "key": {
+    "B": {
+      "tag": "barkcraft:all_barks"
+    },
+    "S": {
+      "tag": "minecraft:coals"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "item": "minecraft:campfire"
+  }
+}

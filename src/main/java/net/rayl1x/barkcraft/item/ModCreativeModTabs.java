@@ -28,7 +28,8 @@ public class ModCreativeModTabs {
                     output.accept(ModItems.CRIMSON_BARK.get());
                     output.accept(ModItems.WARPED_BARK.get());
 
-
+                    output.accept(ModItems.RAW_BEETLE.get());
+                    output.accept(ModItems.COOKED_BEETLE.get());
                 })
                 .build());
 

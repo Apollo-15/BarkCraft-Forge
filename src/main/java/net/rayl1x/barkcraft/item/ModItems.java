@@ -1,5 +1,6 @@
 package net.rayl1x.barkcraft.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,6 +42,20 @@ public class ModItems {
 
     public static final RegistryObject<Item> WARPED_BARK = ITEMS.register("warped_bark",
             () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> RAW_BEETLE = ITEMS.register("raw_beetle",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1)
+                    .saturationMod(0.1f)
+                    .build()
+            )));
+
+    public static final RegistryObject<Item> COOKED_BEETLE = ITEMS.register("cooked_beetle",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3)
+                    .saturationMod(0.3f)
+                    .build()
+            )));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

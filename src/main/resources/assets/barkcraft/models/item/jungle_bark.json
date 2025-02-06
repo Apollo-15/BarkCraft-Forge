@@ -2,5 +2,11 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "barkcraft:item/jungle_bark"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 1 },
+      "model": "barkcraft:item/jungle_bark_old"
+    }
+  ]
 }

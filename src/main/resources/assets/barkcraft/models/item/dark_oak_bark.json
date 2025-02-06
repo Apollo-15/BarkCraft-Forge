@@ -2,5 +2,11 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "barkcraft:item/dark_oak_bark"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 1 },
+      "model": "barkcraft:item/dark_oak_bark_old"
+    }
+  ]
 }

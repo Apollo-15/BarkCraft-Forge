@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rayl1x.barkcraft.events.BeetleEventHandler;
 import net.rayl1x.barkcraft.item.ModCreativeModTabs;
 import net.rayl1x.barkcraft.item.ModItems;
 import org.slf4j.Logger;
@@ -27,9 +28,11 @@ public class BarkCraft {
 
         ModItems.register(modEventBus);
 
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(BeetleEventHandler.class);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

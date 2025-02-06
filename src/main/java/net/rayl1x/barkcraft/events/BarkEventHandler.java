@@ -65,8 +65,12 @@ public class BarkEventHandler {
                 for (int i = 0; i < barkAmount; i++) {
                     Block.popResource(level, event.getPos(), bark);
                 }
-            }
 
+                if (ThreadLocalRandom.current().nextInt(100) < 40) {
+                    ItemStack rawBeetle = new ItemStack(ModItems.RAW_BEETLE.get());
+                    Block.popResource(level, event.getPos(), rawBeetle);
+                }
+            }
         }
         heldItem.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(event.getHand()));
 
@@ -105,5 +109,4 @@ public class BarkEventHandler {
         }
         return null;
     }
-
 }

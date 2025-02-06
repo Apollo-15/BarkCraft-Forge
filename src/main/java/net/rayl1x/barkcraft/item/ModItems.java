@@ -50,6 +50,13 @@ public class ModItems {
                     .build()
             )));
 
+    public static final RegistryObject<Item> COOKED_BEETLE = ITEMS.register("cooked_beetle",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3)
+                    .saturationMod(0.3f)
+                    .build()
+            )));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

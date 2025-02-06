@@ -15,7 +15,7 @@ public class BeetleEventHandler {
     public static void onChickenFed(PlayerInteractEvent.EntityInteract event) {
         if (event.getTarget() instanceof Chicken chicken) {
             ItemStack stack = event.getItemStack();
-            if (stack.getItem() == ModItems.RAW_BEETLE.get()) {
+            if (stack.getItem() == ModItems.RAW_BEETLE.get() || stack.getItem() == ModItems.COOKED_BEETLE.get()) {
                 Player player = event.getEntity();
                 if (!player.getAbilities().instabuild) {
                     stack.shrink(1);
@@ -25,4 +25,5 @@ public class BeetleEventHandler {
             }
         }
     }
+
 }

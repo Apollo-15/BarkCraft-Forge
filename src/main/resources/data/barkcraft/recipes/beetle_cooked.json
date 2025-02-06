@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "barkcraft:raw_beetle"
+  },
+  "result": "barkcraft:cooked_beetle",
+  "experience": 0.35,
+  "cookingtime": 150
+}

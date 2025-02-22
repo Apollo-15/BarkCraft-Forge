@@ -1,4 +1,4 @@
-package net.rayl1x.barkcraft.item;
+package net.apollo15.barkcraft.item;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
@@ -6,8 +6,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.rayl1x.barkcraft.BarkCraft;
-import net.rayl1x.barkcraft.item.custom.FuelItem;
+import net.apollo15.barkcraft.BarkCraft;
+import net.apollo15.barkcraft.item.custom.FuelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =

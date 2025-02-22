@@ -1,4 +1,4 @@
-package net.rayl1x.barkcraft.item.custom;
+package net.apollo15.barkcraft.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

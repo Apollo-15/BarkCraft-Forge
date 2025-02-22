@@ -1,4 +1,4 @@
-package net.rayl1x.barkcraft.events;
+package net.apollo15.barkcraft.events;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.player.Player;
@@ -10,7 +10,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.rayl1x.barkcraft.BarkCraft;
+import net.apollo15.barkcraft.BarkCraft;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -63,7 +63,6 @@ public class ProgrammerArtHandler {
         });
     }
 
-    // 🟥 Фикс сброса CustomModelData при выбрасывании предмета
     @SubscribeEvent
     public static void onItemToss(ItemTossEvent event) {
         ItemStack stack = event.getEntity().getItem();
@@ -75,7 +74,6 @@ public class ProgrammerArtHandler {
         }
     }
 
-    // 🟦 Фикс сброса CustomModelData при поднятии предмета с земли
     @SubscribeEvent
     public static void onItemPickup(PlayerEvent.ItemPickupEvent event) {
         ItemStack stack = event.getStack();
@@ -87,7 +85,6 @@ public class ProgrammerArtHandler {
         }
     }
 
-    // 🟩 Фикс сброса CustomModelData при обновлении инвентаря
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         Player player = event.player;

@@ -1,4 +1,4 @@
-package net.rayl1x.barkcraft;
+package net.apollo15.barkcraft;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -10,10 +10,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.rayl1x.barkcraft.events.BeetleEventHandler;
-import net.rayl1x.barkcraft.events.ProgrammerArtHandler;
-import net.rayl1x.barkcraft.item.ModCreativeModTabs;
-import net.rayl1x.barkcraft.item.ModItems;
+import net.apollo15.barkcraft.events.BeetleEventHandler;
+import net.apollo15.barkcraft.events.ProgrammerArtHandler;
+import net.apollo15.barkcraft.item.ModCreativeModTabs;
+import net.apollo15.barkcraft.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

@@ -4,7 +4,9 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -24,12 +26,16 @@ import java.util.concurrent.ThreadLocalRandom;
 public class BarkEventHandler {
 
     private static Map<Block, Block> getStrippables() {
-        try {
-            Field field = AxeItem.class.getDeclaredField("STRIPPABLES");
-            field.setAccessible(true);
-            return (Map<Block, Block>) field.get(null);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            throw new RuntimeException("Failed to access STRIPPABLES field", e);
+        return AxeItemAccess.getStrippables();
+    }
+
+    private static class AxeItemAccess extends AxeItem {
+        protected AxeItemAccess() {
+            super(Tiers.WOOD, 0, 0, new Item.Properties());
+        }
+
+        protected static Map<Block, Block> getStrippables() {
+            return STRIPPABLES;
         }
     }
 

@@ -2,6 +2,7 @@ package net.apollo15.barkcraft.datagen;
 
 import net.apollo15.barkcraft.BarkCraft;
 import net.apollo15.barkcraft.item.ModItems;
+import net.apollo15.barkcraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

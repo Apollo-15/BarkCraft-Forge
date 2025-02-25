@@ -1,4 +1,4 @@
-package net.apollo15.barkcraft.datagen;
+package net.apollo15.barkcraft.util;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;

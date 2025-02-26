@@ -1,5 +1,6 @@
 package net.apollo15.barkcraft.datagen.loot;
 
+import net.apollo15.barkcraft.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -10,8 +11,6 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraftforge.registries.RegistryObject;
-//import net.apollo15.barkcraft.block.ModBlocks;
-import net.apollo15.barkcraft.item.ModItems;
 
 import java.util.Set;
 
@@ -23,21 +22,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-//        this.dropSelf(ModBlocks.TITANIUM_BLOCK.get());
-//        this.dropSelf(ModBlocks.TIN_BLOCK.get());
-//
-//        this.dropSelf(ModBlocks.WEAPON_WORKBENCH.get());
-//        this.dropSelf(ModBlocks.ANCIENT_TABLE_OF_KNOWLEDGE.get());
-
-
-//        this.add(ModBlocks.TITANIUM_ORE.get(),
-//                block -> createSimpleOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
-//
-//        this.add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(),
-//                block -> createSimpleOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
-//
-//        this.add(ModBlocks.TIN_ORE.get(),
-//                block -> createSimpleOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TIN.get()));
+        this.dropSelf(ModBlocks.ACACIA_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.BIRCH_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.CHERRY_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.DARK_OAK_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.JUNGLE_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.MANGROVE_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.OAK_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.SPRUCE_BARK_BLOCK.get());
 
     }
 
@@ -48,8 +40,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
-//    @Override
-//    protected Iterable<Block> getKnownBlocks() {
-//        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
-//    }
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
 }

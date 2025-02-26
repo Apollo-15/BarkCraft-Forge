@@ -19,28 +19,28 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, BarkCraft.MODID);
 
     public static final RegistryObject<Block> OAK_BARK_BLOCK = registerBlock("oak_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 
     public static final RegistryObject<Block> BIRCH_BARK_BLOCK = registerBlock("birch_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_WOOD)));
 
     public static final RegistryObject<Block> ACACIA_BARK_BLOCK = registerBlock("acacia_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_WOOD)));
 
     public static final RegistryObject<Block> CHERRY_BARK_BLOCK = registerBlock("cherry_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_WOOD)));
 
     public static final RegistryObject<Block> DARK_OAK_BARK_BLOCK = registerBlock("dark_oak_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_WOOD)));
 
     public static final RegistryObject<Block> JUNGLE_BARK_BLOCK = registerBlock("jungle_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_WOOD)));
 
     public static final RegistryObject<Block> MANGROVE_BARK_BLOCK = registerBlock("mangrove_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_WOOD)));
 
     public static final RegistryObject<Block> SPRUCE_BARK_BLOCK = registerBlock("spruce_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LOG)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

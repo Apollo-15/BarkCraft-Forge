@@ -24,6 +24,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MANGROVE_BARK_BLOCK);
         blockWithItem(ModBlocks.OAK_BARK_BLOCK);
         blockWithItem(ModBlocks.SPRUCE_BARK_BLOCK);
+        blockWithItem(ModBlocks.WARPED_BARK_BLOCK);
+        blockWithItem(ModBlocks.CRIMSON_BARK_BLOCK);
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

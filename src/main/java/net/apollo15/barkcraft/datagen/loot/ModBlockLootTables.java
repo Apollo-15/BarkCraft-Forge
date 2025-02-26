@@ -30,7 +30,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MANGROVE_BARK_BLOCK.get());
         this.dropSelf(ModBlocks.OAK_BARK_BLOCK.get());
         this.dropSelf(ModBlocks.SPRUCE_BARK_BLOCK.get());
-
+        this.dropSelf(ModBlocks.WARPED_BARK_BLOCK.get());
+        this.dropSelf(ModBlocks.CRIMSON_BARK_BLOCK.get());
     }
 
     protected LootTable.Builder createSimpleOreDrop(Block pBlock, Item pItem) {

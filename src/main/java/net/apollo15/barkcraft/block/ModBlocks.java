@@ -42,6 +42,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPRUCE_BARK_BLOCK = registerBlock("spruce_bark_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD)));
 
+    public static final RegistryObject<Block> CRIMSON_BARK_BLOCK = registerBlock("crimson_bark_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+
+    public static final RegistryObject<Block> WARPED_BARK_BLOCK = registerBlock("warped_bark_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

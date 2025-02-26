@@ -1,6 +1,7 @@
 package net.apollo15.barkcraft.datagen;
 
 import net.apollo15.barkcraft.block.ModBlocks;
+import net.apollo15.barkcraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.BlockTagsProvider;
@@ -30,6 +31,5 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.MANGROVE_BARK_BLOCK.get())
             .add(ModBlocks.CRIMSON_BARK_BLOCK.get())
             .add(ModBlocks.WARPED_BARK_BLOCK.get());
-
     }
 }

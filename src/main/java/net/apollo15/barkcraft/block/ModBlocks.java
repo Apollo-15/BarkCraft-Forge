@@ -43,10 +43,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD)));
 
     public static final RegistryObject<Block> CRIMSON_BARK_BLOCK = registerBlock("crimson_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HYPHAE)));
 
     public static final RegistryObject<Block> WARPED_BARK_BLOCK = registerBlock("warped_bark_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_HYPHAE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

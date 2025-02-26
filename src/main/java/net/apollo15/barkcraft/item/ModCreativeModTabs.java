@@ -46,6 +46,9 @@ public class ModCreativeModTabs {
                     output.accept(ModBlocks.JUNGLE_BARK_BLOCK.get());
                     output.accept(ModBlocks.CHERRY_BARK_BLOCK.get());
                     output.accept(ModBlocks.MANGROVE_BARK_BLOCK.get());
+
+                    output.accept(ModBlocks.CRIMSON_BARK_BLOCK.get());
+                    output.accept(ModBlocks.WARPED_BARK_BLOCK.get());
                 })
                 .build());
 

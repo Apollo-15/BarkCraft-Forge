@@ -21,6 +21,8 @@
   "block.barkcraft.jungle_bark_block": "Jungle Bark Block",
   "block.barkcraft.mangrove_bark_block": "Mangrove Bark Block",
   "block.barkcraft.spruce_bark_block": "Spruce Bark Block",
+  "block.barkcraft.crimson_bark_block": "Crimson Bark Block",
+  "block.barkcraft.warped_bark_block": "Warped Bark Block",
 
   "creativetab.barkcraft_ingredients_tab": "BarkCraft | Ingredients",
   "creativetab.barkcraft_blocks_tab": "BarkCraft | Blocks"

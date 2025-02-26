@@ -11,4 +11,9 @@ public class ModTags {
         public static final TagKey<Item> BARK = TagKey.create(Registries.ITEM,
                 new ResourceLocation("barkcraft", "bark"));
     }
+
+    public static class Blocks {
+        public static final TagKey<Block> BARK_BLOCKS = TagKey.create(Registries.BLOCK,
+                new ResourceLocation("barkcraft", "bark"));
+    }
 }

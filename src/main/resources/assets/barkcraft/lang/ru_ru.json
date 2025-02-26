@@ -13,5 +13,17 @@
   "item.barkcraft.raw_beetle": "Сырой жук",
   "item.barkcraft.cooked_beetle": "Приготовленный жук",
 
-  "creativetab.barkcraft_ingredients_tab": "BarkCraft | Кора"
+  "block.barkcraft.oak_bark_block": "Блок дубовой коры",
+  "block.barkcraft.birch_bark_block": "Блок берёзовой коры",
+  "block.barkcraft.acacia_bark_block": "Блок акациевой коры",
+  "block.barkcraft.cherry_bark_block": "Блок вишнёвой коры",
+  "block.barkcraft.dark_oak_bark_block": "Блок коры тёмного дуба",
+  "block.barkcraft.jungle_bark_block": "Блок коры тропического дерева",
+  "block.barkcraft.mangrove_bark_block": "Блок коры мангрового дерева",
+  "block.barkcraft.spruce_bark_block": "Блок еловой коры",
+  "block.barkcraft.crimson_bark_block": "Блок багровой коры",
+  "block.barkcraft.warped_bark_block": "Блок искажённой коры",
+
+  "creativetab.barkcraft_ingredients_tab": "BarkCraft | Ингридиенты",
+  "creativetab.barkcraft_blocks_tab": "BarkCraft | Блоки"
 }

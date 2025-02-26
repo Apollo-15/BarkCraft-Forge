@@ -10,7 +10,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.apollo15.barkcraft.BarkCraft;
-import net.apollo15.barkcraft.datagen.recipes.*;
 
 import java.util.function.Consumer;
 

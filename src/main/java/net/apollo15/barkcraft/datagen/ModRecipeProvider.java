@@ -1,5 +1,6 @@
 package net.apollo15.barkcraft.datagen;
 
+import net.apollo15.barkcraft.datagen.recipes.BarkBlocksRecipes;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -21,6 +22,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+        BarkBlocksRecipes.addBarkBlocksRecipes(consumer);
+
 
     }
 

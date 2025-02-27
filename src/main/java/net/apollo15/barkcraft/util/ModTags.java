@@ -10,6 +10,9 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> BARKS = TagKey.create(Registries.ITEM,
                 new ResourceLocation("barkcraft", "bark"));
+
+        public static final TagKey<Item> COALS = TagKey.create(Registries.ITEM,
+                new ResourceLocation("barkcraft", "coal"));
     }
 
     public static class Blocks {

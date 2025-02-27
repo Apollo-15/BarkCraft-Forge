@@ -6,6 +6,7 @@ import net.apollo15.barkcraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -31,5 +32,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
             .add(ModItems.CRIMSON_BARK.get())
             .add(ModItems.MANGROVE_BARK.get())
             .add(ModItems.CHERRY_BARK.get());
+
+        this.tag(ModTags.Items.COALS)
+            .add(Items.COAL)
+            .add(Items.CHARCOAL);
     }
 }

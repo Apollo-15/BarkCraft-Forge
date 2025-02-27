@@ -12,6 +12,7 @@ import net.minecraft.world.item.Items;
 
 import java.util.function.Consumer;
 
+
 public class SticksFromBarkRecipes extends ModRecipeProvider {
 
     public SticksFromBarkRecipes(PackOutput pOutput) {
@@ -22,6 +23,6 @@ public class SticksFromBarkRecipes extends ModRecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 2)
                 .requires(ModTags.Items.BARKS)
                 .unlockedBy("has_bark", has(ModTags.Items.BARKS))
-                .save(consumer, new ResourceLocation(BarkCraft.MODID, "sticks_from_bark"));
+                .save(consumer);
     }
 }

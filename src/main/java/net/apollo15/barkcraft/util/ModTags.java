@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Items {
-        public static final TagKey<Item> BARK = TagKey.create(Registries.ITEM,
+        public static final TagKey<Item> BARKS = TagKey.create(Registries.ITEM,
                 new ResourceLocation("barkcraft", "bark"));
     }
 

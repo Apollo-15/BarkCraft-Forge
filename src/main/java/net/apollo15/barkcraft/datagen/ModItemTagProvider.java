@@ -20,7 +20,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(ModTags.Items.BARK)
+        this.tag(ModTags.Items.BARKS)
             .add(ModItems.ACACIA_BARK.get())
             .add(ModItems.BIRCH_BARK.get())
             .add(ModItems.DARK_OAK_BARK.get())

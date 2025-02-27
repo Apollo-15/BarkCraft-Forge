@@ -17,6 +17,7 @@ import java.util.LinkedHashMap;
 
 public class ModItemModelProvider extends ItemModelProvider {
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
+
     static {
         trimMaterials.put(TrimMaterials.QUARTZ, 0.1F);
         trimMaterials.put(TrimMaterials.IRON, 0.2F);
@@ -54,15 +55,28 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(BarkCraft.MODID, "item/" + item.getId().getPath()));
+        String itemPath = item.getId().getPath();
+        ResourceLocation defaultTexture = new ResourceLocation(BarkCraft.MODID, "item/" + itemPath);
+        ResourceLocation oldTexture = new ResourceLocation(BarkCraft.MODID, "item/" + itemPath + "_old");
 
+        ItemModelBuilder builder = withExistingParent(itemPath, new ResourceLocation("item/generated"))
+                .texture("layer0", defaultTexture);
+
+        if (existingFileHelper.exists(oldTexture, TEXTURE)) {
+            builder.override()
+                    .predicate(new ResourceLocation("custom_model_data"), 1)
+                    .model(withExistingParent(itemPath + "_old", new ResourceLocation("item/generated"))
+                            .texture("layer0", oldTexture));
+        }
+
+        return builder;
     }
+
+
+}
 
 //    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
 //        return withExistingParent(item.getId().getPath(),
 //                new ResourceLocation("item/handheld")).texture("layer0",
 //                new ResourceLocation(BarkCraft.MODID,"item/" + item.getId().getPath()));
 //    }
-}

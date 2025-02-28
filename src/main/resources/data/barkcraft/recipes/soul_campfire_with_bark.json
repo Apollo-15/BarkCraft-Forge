@@ -10,13 +10,13 @@
       "tag": "barkcraft:all_barks"
     },
     "S": {
-      "tag": "minecraft:coals"
+      "tag": "barkcraft:soul_items"
     },
     "L": {
       "tag": "barkcraft:all_barks_blocks_logs"
     }
   },
   "result": {
-    "item": "minecraft:campfire"
+    "item": "minecraft:soul_campfire"
   }
 }

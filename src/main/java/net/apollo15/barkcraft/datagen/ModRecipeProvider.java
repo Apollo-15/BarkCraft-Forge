@@ -1,7 +1,6 @@
 package net.apollo15.barkcraft.datagen;
 
 import net.apollo15.barkcraft.datagen.recipes.BarkBlocksRecipes;
-import net.apollo15.barkcraft.datagen.recipes.CampFireRecipes;
 import net.apollo15.barkcraft.datagen.recipes.SticksFromBarkRecipes;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -26,9 +25,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         BarkBlocksRecipes.addBarkBlocksRecipes(consumer);
         SticksFromBarkRecipes.addSticksFromBarkRecipes(consumer);
-        CampFireRecipes.addCampFireRecipes(consumer);
-
-
     }
 
     protected static void campfireCooking(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, float experience, int cookingTime) {

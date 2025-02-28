@@ -1,0 +1,23 @@
+{
+  "values": [
+    "barkcraft:oak_bark_block",
+    "barkcraft:birch_bark_block",
+    "barkcraft:spruce_bark_block",
+    "barkcraft:dark_oak_bark_block",
+    "barkcraft:jungle_bark_block",
+    "barkcraft:acacia_bark_block",
+    "barkcraft:cherry_bark_block",
+    "barkcraft:warped_bark_block",
+    "barkcraft:crimson_bark_block",
+    "barkcraft:mangrove_bark_block",
+    "minecraft:oak_log",
+    "minecraft:birch_log",
+    "minecraft:spruce_log",
+    "minecraft:dark_oak_log",
+    "minecraft:jungle_log",
+    "minecraft:acacia_log",
+    "minecraft:cherry_log",
+    "minecraft:warped_stem",
+    "minecraft:crimson_stem"
+  ]
+}

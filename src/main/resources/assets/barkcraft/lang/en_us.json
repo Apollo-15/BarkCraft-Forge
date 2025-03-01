@@ -13,5 +13,17 @@
   "item.barkcraft.raw_beetle": "Raw beetle",
   "item.barkcraft.cooked_beetle": "Cooked beetle",
 
-  "creativetab.barkcraft_ingredients_tab": "BarkCraft | Barks"
+  "block.barkcraft.oak_bark_block": "Oak Bark Block",
+  "block.barkcraft.birch_bark_block": "Birch Bark Block",
+  "block.barkcraft.acacia_bark_block": "Acacia Bark Block",
+  "block.barkcraft.cherry_bark_block": "Cherry Bark Block",
+  "block.barkcraft.dark_oak_bark_block": "Dark Oak Bark Block",
+  "block.barkcraft.jungle_bark_block": "Jungle Bark Block",
+  "block.barkcraft.mangrove_bark_block": "Mangrove Bark Block",
+  "block.barkcraft.spruce_bark_block": "Spruce Bark Block",
+  "block.barkcraft.crimson_bark_block": "Crimson Bark Block",
+  "block.barkcraft.warped_bark_block": "Warped Bark Block",
+
+  "creativetab.barkcraft_ingredients_tab": "BarkCraft | Ingredients",
+  "creativetab.barkcraft_blocks_tab": "BarkCraft | Blocks"
 }
